@@ -1,0 +1,41 @@
+.section-live {
+  color: #ffffff;
+
+  background: rgb(5,77,123);
+  background: -moz-linear-gradient(90deg, rgba(5,77,123,1) 0%, rgba(16,119,94,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(5,77,123,1) 0%, rgba(16,119,94,1) 100%);
+  background: linear-gradient(90deg, rgba(5,77,123,1) 0%, rgba(16,119,94,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#054d7b",endColorstr="#10775e",GradientType=1);
+
+  h2 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .button:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      color: #ffffff;
+      line-height: 3;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @media screen and (max-width: 1060px){
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.main-menu {
+  /* visibility: hidden; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  padding: 80px;
+  margin-right: -510px;
+  overflow: auto;
+  background-color: #FAFAFA;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.6s;
+  z-index: 4;
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+    margin-right: -100vw;
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 90px 30px 20px;
+  }
+
+  &.active {
+    /* visibility: visible; */
+    margin-right: 0;
+  }
+
+  &_close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 32px;
+    height: 32px;
+    background: url("../images/close.svg") no-repeat;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 800px) {
+      outline: none;
+    }
+  }
+
+  &_phone {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: #444444;
+
+    &:hover,
+    &:active {
+      color: black;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 30px;
+    }
+  }
+
+  &_nav {
+    @media screen and (max-width: 550px) {
+      padding-bottom: 80px;
+    }
+
+    a {
+      display: block;
+      margin: 30px 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 120%;
+      color: #444444;
+
+      &:hover,
+      &:active {
+        color: black;
+      }
+
+      @media screen and (max-width: 450px) {
+        margin: 24px 0;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+
+  &.active {
+    display: block;
+  }
+}

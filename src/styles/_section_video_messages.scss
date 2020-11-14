@@ -1,0 +1,32 @@
+.section-video-messages {
+  h2 {
+    text-align: center;
+  }
+
+  .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+      max-width: 42%;
+      margin: 0 30px;
+
+      h3 {
+        margin-top: 15px;
+        margin-bottom: 5px;
+
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+        margin: unset;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      display: block;
+    }
+  }
+}
