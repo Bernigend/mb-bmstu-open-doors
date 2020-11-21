@@ -5,8 +5,8 @@ var SCROLL_OFFSET = 75;
 var EPSILON = 1e-10;
 
 var mainMenuNavLink = document.querySelectorAll(".main-menu_nav a[href*='#']");
-var firstPageArrow = document.querySelector(".first-page_arrow");
-var logo = document.querySelector(".fixed-header_logo");
+var firstPageArrow = document.querySelector(".section-header__arrow");
+// var logo = document.querySelector(".fixed-header_logo");
 
 function scrollToCoordinate(coordinate, duration) {
   var initialY = window.pageYOffset;
@@ -56,7 +56,7 @@ mainMenuNavLink.forEach(function (link) {
 
 firstPageArrow.addEventListener('click', scrollToAnchor(event));
 
-logo.addEventListener('click', function (e) {
-  e.preventDefault();
-  scrollToCoordinate(0, SCROLL_DURATION);
-});
+// logo.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   scrollToCoordinate(0, SCROLL_DURATION);
+// });

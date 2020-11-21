@@ -1,0 +1,12 @@
+.section-slider {
+  padding: unset;
+
+  .swiper-container {
+    height: 800px;
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

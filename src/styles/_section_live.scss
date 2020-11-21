@@ -16,6 +16,14 @@
     text-align: center;
   }
 
+  .button {
+    @media screen and (max-width: 610px) {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0 !important;
+    }
+  }
+
   .button:not(:last-child) {
     margin-right: 40px;
   }
@@ -25,11 +33,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    div {
+      margin: -15px 0;
+    }
+
     a {
+      display: block;
       color: #ffffff;
-      line-height: 3;
+      margin: 30px 0;
+      transition: .3s transform;
 
       &:hover {
+        color: #ffffff;
+        transform: translateX(15px);
         text-decoration: underline;
       }
     }

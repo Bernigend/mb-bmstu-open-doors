@@ -20,6 +20,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="./src/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
 
@@ -51,13 +53,13 @@
         </div>
     </div>
 
-    <a class="section-header__arrow" href="#director"></a>
+    <a class="section-header__arrow" href="#section-video-messages"></a>
 </section>
 
 <!--  Видеообращения  -->
 <section class="section-video-messages" id="section-video-messages">
     <div class="wrapper">
-        <h2>Приветствуем вас в Мытищинском филиале МГТУ&nbsp;им.&nbsp;Н.&nbsp;Э.&nbsp;Баумана</h2>
+        <h2>Приветствуем вас в Мытищинском филиале <span class="h2-desktop">МГТУ&nbsp;им.&nbsp;Н.&nbsp;Э.&nbsp;Баумана</span><span class="h2-mobile">МГТУ им. Н. Э. Баумана</span></h2>
         <div class="video-list">
             <div class="video-list__item">
                 <div class="youtube-wrapper">
@@ -98,6 +100,22 @@
     </div>
 </section>
 
+<!--  Слайдер  -->
+<section class="section-slider">
+    <div class="swiper-container" id="swiper-container">
+        <div class="swiper-wrapper">
+            <div data-background="https://i.ytimg.com/vi/Udj7A579bFk/maxresdefault.jpg" class="swiper-slide swiper-lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div data-background="https://i.ytimg.com/vi/Udj7A579bFk/maxresdefault.jpg" class="swiper-slide swiper-lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
 <!--  Прямой эфир (приёмная кампания)  -->
 <section class="section-live" id="section-live-entrant">
     <div class="wrapper">
@@ -117,19 +135,69 @@
 
         <div class="section-live__links">
             <div>
-                <a href="/">Правила приёма и новый набор</a> <br>
-                <a href="/">План приёма</a> <br>
+                <a href="/">Правила приёма и новый набор</a>
+                <a href="/">План приёма</a>
             </div>
             <div>
-                <a href="/">Обучение на платной основе</a> <br>
-                <a href="/">Целевое обучение</a> <br>
-                <a href="/">Подготовительные курсы</a> <br>
+                <a href="/">Обучение на платной основе</a>
+                <a href="/">Целевое обучение</a>
+                <a href="/">Подготовительные курсы</a>
             </div>
             <div>
-                <a href="/">Значения минимально необходимых баллов</a> <br>
-                <a href="/">Проходные баллы прошлых лет</a> <br>
-                <a href="/">Перечень индивидуальных достижений</a> <br>
+                <a href="/">Значения минимально необходимых баллов</a>
+                <a href="/">Проходные баллы прошлых лет</a>
+                <a href="/">Перечень индивидуальных достижений</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<!--  Выбор направления подготовки  -->
+<section class="section-bachelor" id="section-bachelor">
+    <div class="wrapper">
+        <h2>Подбери направление подготовки</h2>
+        <p>Для поступления на любое направление требуются результаты трёх экзаменов (ЕГЭ).</p>
+
+        <h3>Отметь предметы, которые планируешь сдавать на ЕГЭ</h3>
+        <ul class="bachelor-subject-list">
+            <li class="selected">Математика (базовая)</li>
+            <li>Математика (профильная)</li>
+            <li>Русский язык</li>
+            <li>Обществознание</li>
+            <li>Информатика и ИКТ</li>
+            <li>Физика</li>
+            <li>Биология</li>
+            <li>Химия</li>
+        </ul>
+
+        <div class="bachelor-result">
+            <h3>Тебе могут подойти эти направления:</h3>
+            <ul class="bachelor-result__list">
+                <li>
+                    <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
+                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                    <p>Проходной балл в 2020: <b>XX</b></p>
+                    <p>Бюджетных мест в 2021: <b>XX</b></p>
+                </li>
+                <li>
+                    <div class="bachelor-result__name lt">Прикладная математика и информатика (09.03.01)</div>
+                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                    <p>Проходной балл в 2020: <b>XX</b></p>
+                    <p>Бюджетных мест в 2021: <b>XX</b></p>
+                </li>
+                <li>
+                    <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
+                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                    <p>Проходной балл в 2020: <b>XX</b></p>
+                    <p>Бюджетных мест в 2021: <b>XX</b></p>
+                </li>
+                <li>
+                    <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
+                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                    <p>Проходной балл в 2020: <b>XX</b></p>
+                    <p>Бюджетных мест в 2021: <b>XX</b></p>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -151,13 +219,13 @@
     <div class="wrapper">
         <div style="text-align: center;">
             <h2>Остались вопросы?</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZhEsFnA5dn0Z_0QM-8.." width="640" height="538" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+            <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfZhEsFnA5dn0Z_0QM-8.." width="640" height="538" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
         </div>
     </div>
 </section>
 
 <!--  Подвал  -->
-<footer>
+<footer class="main-footer">
     <div class="wrapper">
         <div class="footer-list">
             <div class="footer-item1">
@@ -196,17 +264,20 @@
     <button class="main-menu_close" aria-label="Закрыть меню"></button>
     <a class="main-menu_phone nobr" href="tel:+74955869335">8 495 586-93-35</a>
     <nav class="main-menu_nav">
-        <a href="https://vk.com/video-32034_456239065" target="_blank">Запись трансляции</a>
-        <a href="#director">Обращение директора</a>
-        <a href="#priem">Приёмная кампания 2020</a>
-        <a href="#kf">Космический факультет</a>
-        <a href="#lt">Лесотехнический факультет</a>
-        <a href="#vk">Военная кафедра</a>
-        <a href="#activity">Внеучебная деятельность</a>
-        <a href="#contract">Платное обучение</a>
-        <a href="#courses">Подготовительные курсы</a>
-        <a href="#contacts">Контактная информация</a>
+        <a href="#section-video-messages">Видеообращения руководства филиала</a>
+        <a href="#section-live-entrant">Прямой эфир о приёмной кампании</a>
+        <a href="#section-bachelor">Выбор направления подготовки</a>
+        <a href="#section-live-dean">Прямой эфир с деканами факультетов</a>
+        <a href="#section-questions">Обратная связь</a>
     </nav>
+    <footer>
+        <div class="social">
+            <a class="social-vk" href="https://vk.com/mf_bmstu" target="_blank"></a>
+            <a class="social-instagram" href="https://www.instagram.com/mf_bmstu/" target="_blank"></a>
+        </div>
+        <a href="mailto:priem@mgul.ac.ru">priem@mgul.ac.ru</a>
+        <a href="https://mf.bmstu.ru/" target="_blank">mf.bmstu.ru</a>
+    </footer>
 </div>
 
 <!--  Оверлей менюшки  -->
@@ -214,5 +285,40 @@
 
 <script src="./src/js/scrollTh.js"></script>
 <script src="./src/js/menu.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        // Disable preloading of all images
+        preloadImages: false,
+        // Enable lazy loading
+        lazy: true
+    });
+
+    var sliderContainer = document.getElementById('swiper-container');
+
+    function sliderHeight() {
+        var width = window.innerWidth;
+        sliderContainer.style.height = ((width / 16) * 9) + 'px';
+        console.log('sgjis')
+    }
+
+    (function() {
+        sliderHeight();
+        window.addEventListener('resize', sliderHeight);
+    })();
+</script>
+
 </body>
 </html>

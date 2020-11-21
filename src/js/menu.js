@@ -15,7 +15,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 }
 
 menuBtn.addEventListener("click", openMenu);
-menuBtnFixed.addEventListener("click", openMenu);
+// menuBtnFixed.addEventListener("click", openMenu);
 
 mainMenuClose.addEventListener("click", closeMenu);
 mainMenuOverlay.addEventListener("click", closeMenu);
@@ -28,7 +28,7 @@ document.addEventListener('keydown', function (event) {
     if (event.code == 'Escape') {
         if (mainMenu.classList.contains("active")) {
             closeMenu();
-            changeFocus();
+            // changeFocus();
         }
     }
 });
@@ -44,10 +44,10 @@ function closeMenu() {
     mainMenuOverlay.classList.remove("active");
 }
 
-function changeFocus() {
-    if (headerFixed.style.display == "none") {
-        menuBtn.focus();
-    } else {
-        menuBtnFixed.focus();
-    }
-}
+// function changeFocus() {
+//     if (headerFixed.style.display == "none") {
+//         menuBtn.focus();
+//     } else {
+//         menuBtnFixed.focus();
+//     }
+// }
