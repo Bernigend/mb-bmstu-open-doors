@@ -31,13 +31,13 @@
       }
 
       @media screen and (max-width: 900px) {
-        max-width: 100%;
-        margin: unset;
+        width: 100%;
+        //margin: unset;
       }
     }
 
     @media screen and (max-width: 900px) {
-      display: block;
+      flex-direction: column;
     }
   }
 }

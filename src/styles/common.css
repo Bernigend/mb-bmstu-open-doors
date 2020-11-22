@@ -1129,13 +1129,12 @@ button {
 }
 @media screen and (max-width: 900px) {
   .section-video-messages .video-list__item {
-    max-width: 100%;
-    margin: unset;
+    width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
   .section-video-messages .video-list {
-    display: block;
+    flex-direction: column;
   }
 }
 
@@ -1173,10 +1172,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: -20px;
 }
 .section-live__links div {
-  margin: -20px 0;
+  margin: -10px 0;
 }
 .section-live__links a {
   display: block;
