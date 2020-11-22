@@ -373,8 +373,8 @@ body {
 }
 
 section, .main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 450px) {
   section, .main-footer {
@@ -412,7 +412,7 @@ h2 {
   margin: 0 0 20px 0;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.3;
 }
 @media screen and (max-width: 600px) {
@@ -424,6 +424,7 @@ h2 {
 h3 {
   margin-top: 40px;
   margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -432,11 +433,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #5d886a;
-}
-
-a:hover {
-  color: #444444;
+  color: #10775E;
 }
 
 button {
@@ -555,11 +552,11 @@ button {
 .button {
   display: inline-block;
   margin: 20px 0;
-  padding: 17px 30px;
+  padding: 15px 30px;
   border: 1px solid #ffffff;
   border-radius: 10px;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 1.5;
   color: #ffffff;
   transition-property: box-shadow;
   transition-duration: 0.2s;
@@ -604,8 +601,8 @@ body {
 }
 
 section, .main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 450px) {
   section, .main-footer {
@@ -643,7 +640,7 @@ h2 {
   margin: 0 0 20px 0;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.3;
 }
 @media screen and (max-width: 600px) {
@@ -655,6 +652,7 @@ h2 {
 h3 {
   margin-top: 40px;
   margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -663,11 +661,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #5d886a;
-}
-
-a:hover {
-  color: #444444;
+  color: #10775E;
 }
 
 button {
@@ -690,6 +684,7 @@ button {
   }
 }
 .main-footer p {
+  margin-top: 50px;
   margin-bottom: unset;
 }
 .main-footer a {
@@ -745,9 +740,10 @@ button {
 .footer-social, .main-menu footer .social, .main-footer .social {
   display: flex;
   align-items: center;
+  margin-top: -10px;
 }
 .footer-social a, .main-menu footer .social a, .main-footer .social a {
-  margin-right: 8px;
+  margin-right: 15px;
 }
 .footer-social a:hover, .main-menu footer .social a:hover, .main-footer .social a:hover {
   opacity: 0.85;
@@ -764,7 +760,7 @@ button {
 .footer-social-instagram, .footer-social-instagram--black, .main-menu footer .social .social-instagram, .main-footer .social .social-instagram {
   display: inline-block;
   width: 30px;
-  height: 27px;
+  height: 30px;
   background: url("../images/instagram-logo.svg") no-repeat;
 }
 .footer-social-instagram--black, .main-menu footer .social .social-instagram {
@@ -844,12 +840,21 @@ button {
 .main-menu footer {
   position: absolute;
   bottom: 0;
+  padding-bottom: 55px;
+}
+.main-menu footer .social a {
+  margin-right: 15px !important;
+  margin-bottom: 25px !important;
 }
 .main-menu footer .social .social-vk {
   margin-bottom: unset;
 }
 .main-menu footer .social .social-instagram {
   margin-bottom: unset;
+}
+.main-menu footer a {
+  margin: 5px 0 !important;
+  line-height: 1.5 !important;
 }
 @media screen and (max-height: 800px) {
   .main-menu footer {
@@ -1102,16 +1107,25 @@ button {
 .section-video-messages .video-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: -20px;
 }
 .section-video-messages .video-list__item {
-  max-width: 42%;
-  margin: 0 30px;
+  width: calc(50% - 20px);
+  margin-top: 20px;
 }
 .section-video-messages .video-list__item h3 {
   margin-top: 15px;
-  margin-bottom: 5px;
-  font-size: 24px;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+.section-video-messages .video-list__item a {
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+.section-video-messages .video-list__item a:hover {
+  text-decoration: none;
 }
 @media screen and (max-width: 900px) {
   .section-video-messages .video-list__item {
@@ -1134,11 +1148,13 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#054d7b",endColorstr="#10775e",GradientType=1);
 }
 .section-live h2 {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .section-live .subtitle {
+  display: block;
   text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 610px) {
   .section-live .button {
@@ -1148,20 +1164,24 @@ button {
   }
 }
 .section-live .button:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 24px;
+}
+.section-live__buttons {
+  margin-top: -10px;
 }
 .section-live__links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .section-live__links div {
-  margin: -15px 0;
+  margin: -20px 0;
 }
 .section-live__links a {
   display: block;
   color: #ffffff;
-  margin: 30px 0;
+  margin: 20px 0;
   transition: 0.3s transform;
 }
 .section-live__links a:hover {
@@ -1175,8 +1195,15 @@ button {
   }
 }
 
+.section-bachelor h2 {
+  margin-bottom: 15px;
+}
+.section-bachelor h3 {
+  margin-top: 60px;
+}
+
 .bachelor-subject-list {
-  margin: 20px 0 -20px 0;
+  margin: 20px -10px -5px -10px;
   padding: 0;
 }
 .bachelor-subject-list li {
@@ -1184,12 +1211,12 @@ button {
   position: relative;
   list-style-type: none;
   cursor: pointer;
-  padding: 6px 30px;
+  padding: 9px 24px;
   color: #054D7B;
-  font-size: 0.9em;
+  font-size: 18px;
   border: 1px solid #054D7B;
   border-radius: 50px;
-  margin: 0 20px 20px 0;
+  margin: 10px;
   transition: 0.3s background-color, color;
 }
 .bachelor-subject-list li:hover, .bachelor-subject-list li.selected {
@@ -1197,34 +1224,35 @@ button {
   color: #ffffff;
 }
 .bachelor-subject-list li.selected {
-  padding-right: 55px;
+  padding-right: 52px;
 }
 .bachelor-subject-list li.selected:after {
   display: block;
   content: "";
   position: absolute;
-  right: 20px;
+  right: 25px;
   top: 50%;
-  margin-top: -7.5px;
-  width: 15px;
-  height: 15px;
+  margin-top: -6px;
+  width: 12px;
+  height: 12px;
   background: url("../images/close-white.svg") no-repeat center;
 }
 
 .bachelor-result__list {
   padding: 0;
-  margin: 20px -20px 0 -20px;
+  margin: 20px -25px 0 -25px;
 }
 .bachelor-result__list li {
   display: block;
   list-style-type: none;
-  padding: 20px;
+  padding: 20px 25px;
   border: 1px solid #ffffff;
   transition: 0.3s border-color;
 }
 .bachelor-result__list li p {
-  margin: 3px 0;
-  font-size: 0.9em;
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 21px;
 }
 .bachelor-result__list li p:last-child {
   margin-bottom: 0;
@@ -1234,8 +1262,9 @@ button {
 }
 .bachelor-result__name {
   font-weight: bold;
-  font-size: 1.2em;
-  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 .bachelor-result__name.kf {
   color: #054D7B;
@@ -1270,8 +1299,8 @@ body {
 }
 
 section, .main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 450px) {
   section, .main-footer {
@@ -1309,7 +1338,7 @@ h2 {
   margin: 0 0 20px 0;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.3;
 }
 @media screen and (max-width: 600px) {
@@ -1321,6 +1350,7 @@ h2 {
 h3 {
   margin-top: 40px;
   margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -1329,11 +1359,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #5d886a;
-}
-
-a:hover {
-  color: #444444;
+  color: #10775E;
 }
 
 button {
@@ -1356,6 +1382,7 @@ button {
   }
 }
 .main-footer p {
+  margin-top: 50px;
   margin-bottom: unset;
 }
 .main-footer a {
@@ -1411,9 +1438,10 @@ button {
 .footer-social, .main-footer .social, .main-menu footer .social {
   display: flex;
   align-items: center;
+  margin-top: -10px;
 }
 .footer-social a, .main-footer .social a, .main-menu footer .social a {
-  margin-right: 8px;
+  margin-right: 15px;
 }
 .footer-social a:hover, .main-footer .social a:hover, .main-menu footer .social a:hover {
   opacity: 0.85;
@@ -1430,7 +1458,7 @@ button {
 .footer-social-instagram, .main-footer .social .social-instagram, .footer-social-instagram--black, .main-menu footer .social .social-instagram {
   display: inline-block;
   width: 30px;
-  height: 27px;
+  height: 30px;
   background: url("../images/instagram-logo.svg") no-repeat;
 }
 .footer-social-instagram--black, .main-menu footer .social .social-instagram {

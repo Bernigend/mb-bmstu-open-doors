@@ -6,17 +6,28 @@
   .video-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: -20px;
 
     &__item {
-      max-width: 42%;
-      margin: 0 30px;
+      width: calc(50% - 20px);
+      margin-top: 20px;
 
       h3 {
         margin-top: 15px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
 
-        font-size: 24px;
+        font-size: 28px;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 1.5;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
 
       @media screen and (max-width: 900px) {
