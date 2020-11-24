@@ -142,46 +142,52 @@
         <h2>Подбери направление подготовки</h2>
         <p>Для поступления на любое направление требуются результаты трёх экзаменов (ЕГЭ).</p>
 
-        <h3>Отметь предметы, которые планируешь сдавать на ЕГЭ</h3>
-        <ul class="bachelor-subject-list">
-            <li>Математика (базовая)</li>
-            <li class="selected">Математика (профильная)</li>
-            <li>Русский язык</li>
-            <li class="selected">Обществознание</li>
-            <li>Информатика и ИКТ</li>
-            <li>Физика</li>
-            <li class="selected">Биология</li>
-            <li>Химия</li>
-        </ul>
+        <div id="js-filter-loader">
+            <p style="text-align: center">Загрузка...</p>
+        </div>
 
-        <div class="bachelor-result">
-            <h3>Тебе могут подойти эти направления:</h3>
-            <ul class="bachelor-result__list">
-                <li>
-                    <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
-                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
-                    <p>Проходной балл в 2020: <b>XX</b></p>
-                    <p>Бюджетных мест в 2021: <b>XX</b></p>
-                </li>
-                <li>
-                    <div class="bachelor-result__name lt">Прикладная математика и информатика (09.03.01)</div>
-                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
-                    <p>Проходной балл в 2020: <b>XX</b></p>
-                    <p>Бюджетных мест в 2021: <b>XX</b></p>
-                </li>
-                <li>
-                    <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
-                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
-                    <p>Проходной балл в 2020: <b>XX</b></p>
-                    <p>Бюджетных мест в 2021: <b>XX</b></p>
-                </li>
-                <li>
-                    <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
-                    <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
-                    <p>Проходной балл в 2020: <b>XX</b></p>
-                    <p>Бюджетных мест в 2021: <b>XX</b></p>
-                </li>
+        <div id="js-filter-choose">
+            <h3>Отметь предметы, которые планируешь сдавать на ЕГЭ</h3>
+            <ul class="bachelor-subject-list" id="js-filter-buttons">
+                <li data-subject="1">Математика</li>
+                <li data-subject="5">Русский язык</li>
+                <li data-subject="10">Информатика и ИКТ</li>
+                <li data-subject="15">Физика</li>
+                <li data-subject="20">Обществознание</li>
+                <li data-subject="25">Иностранный язык</li>
+                <li data-subject="30">Химия</li>
+                <li data-subject="35">Биология</li>
             </ul>
+
+            <div class="bachelor-result" id="js-filter-result-block">
+                <h3>Тебе могут подойти эти направления<span id="js-filter-result-count"></span>:</h3>
+                <ul class="bachelor-result__list" id="js-filter-items-list">
+                    <li>
+                        <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
+                        <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                        <p>Проходной балл в 2020: <b>XX</b></p>
+                        <p>Бюджетных мест в 2021: <b>XX</b></p>
+                    </li>
+                    <li>
+                        <div class="bachelor-result__name lt">Прикладная математика и информатика (09.03.01)</div>
+                        <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                        <p>Проходной балл в 2020: <b>XX</b></p>
+                        <p>Бюджетных мест в 2021: <b>XX</b></p>
+                    </li>
+                    <li>
+                        <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
+                        <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                        <p>Проходной балл в 2020: <b>XX</b></p>
+                        <p>Бюджетных мест в 2021: <b>XX</b></p>
+                    </li>
+                    <li>
+                        <div class="bachelor-result__name kf">Прикладная математика и информатика (09.03.01)</div>
+                        <p>Минимальные баллы ЕГЭ: <b>Физика (XX), Математика (XX), Русский язык (XX)</b></p>
+                        <p>Проходной балл в 2020: <b>XX</b></p>
+                        <p>Бюджетных мест в 2021: <b>XX</b></p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -283,42 +289,7 @@
 <!--  Оверлей менюшки  -->
 <div class="menu-overlay"></div>
 
-<script src="./src/js/scrollTh.js"></script>
-<script src="./src/js/menu.js"></script>
-
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        // Disable preloading of all images
-        preloadImages: false,
-        // Enable lazy loading
-        lazy: true
-    });
-
-    var sliderContainer = document.getElementById('swiper-container');
-
-    function sliderHeight() {
-        var width = window.innerWidth;
-        sliderContainer.style.height = ((width / 16) * 9) + 'px';
-        console.log('sgjis')
-    }
-
-    (function() {
-        sliderHeight();
-        window.addEventListener('resize', sliderHeight);
-    })();
-</script>
-
+<script src="src/js/common.min.js?v=24112020"></script>
 </body>
 </html>
