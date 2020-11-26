@@ -1252,11 +1252,17 @@ button {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 450px) {
+  .section-live__links {
+    margin-bottom: unset;
+  }
+}
 
 .live-video {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: -40px;
 }
 .live-video__timer {
   color: #444444 !important;

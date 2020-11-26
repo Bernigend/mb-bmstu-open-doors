@@ -61,6 +61,10 @@
     @media screen and (max-width: 1060px){
       flex-direction: column;
     }
+
+    @media screen and (max-width: 450px) {
+      margin-bottom: unset;
+    }
   }
 }
 
@@ -68,6 +72,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: -40px;
 
   &__timer {
     @extend h1;
