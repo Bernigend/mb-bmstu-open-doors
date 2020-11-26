@@ -1265,9 +1265,11 @@ button {
   align-items: center;
   text-align: center;
   z-index: 99999;
+  margin: 0;
+  justify-content: center;
 }
 .live-video__screen {
-  display: block;
+  display: flex;
   position: absolute;
   top: 0;
   right: 0;

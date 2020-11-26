@@ -78,10 +78,12 @@
     align-items: center;
     text-align: center;
     z-index: 99999;
+    margin: 0;
+    justify-content: center;
   }
 
   &__screen {
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
