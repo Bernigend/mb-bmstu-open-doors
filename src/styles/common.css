@@ -32,7 +32,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
+h1, .live-video__timer {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -388,7 +388,7 @@ section, .main-footer {
   }
 }
 
-h1 {
+h1, .live-video__timer {
   margin: 0 0 40px 0;
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -398,17 +398,17 @@ h1 {
   color: white;
 }
 @media screen and (max-width: 700px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 450px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 360px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 46px;
   }
 }
@@ -657,7 +657,7 @@ section, .main-footer {
   }
 }
 
-h1 {
+h1, .live-video__timer {
   margin: 0 0 40px 0;
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -667,17 +667,17 @@ h1 {
   color: white;
 }
 @media screen and (max-width: 700px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 450px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 360px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 46px;
   }
 }
@@ -1253,6 +1253,35 @@ button {
   }
 }
 
+.live-video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.live-video__timer {
+  color: #444444 !important;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 99999;
+}
+.live-video__screen {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+.live-video.elapsed .live-video__timer {
+  display: none;
+}
+.live-video.elapsed .live-video__screen {
+  display: none;
+}
+
 .section-bachelor h2 {
   margin-bottom: 15px;
 }
@@ -1433,6 +1462,11 @@ button {
 .section-questions iframe {
   min-height: 630px;
 }
+@media screen and (max-width: 540px) {
+  .section-questions iframe {
+    min-height: 680px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -1464,7 +1498,7 @@ section, .main-footer {
   }
 }
 
-h1 {
+h1, .live-video__timer {
   margin: 0 0 40px 0;
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -1474,17 +1508,17 @@ h1 {
   color: white;
 }
 @media screen and (max-width: 700px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 450px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 360px) {
-  h1 {
+  h1, .live-video__timer {
     font-size: 46px;
   }
 }

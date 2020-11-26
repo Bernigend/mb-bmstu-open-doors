@@ -63,7 +63,7 @@
         <div class="video-list">
             <div class="video-list__item">
                 <div class="youtube-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/acovrb7iFJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video-list__text">
                     <h3>Директор МФ МГТУ им. Н. Э. Баумана Виктор Георгиевич Санаев</h3>
@@ -71,7 +71,7 @@
             </div>
             <div class="video-list__item">
                 <div class="youtube-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Q8gaohQLI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video-list__text">
                     <h3>Ответственный секретарь Приёмной комиссии Мытищинского филиала</h3>
@@ -80,7 +80,7 @@
             </div>
             <div class="video-list__item">
                 <div class="youtube-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dcuhaKWgwus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video-list__text">
                     <h3>Декан Космического факультета</h3>
@@ -89,10 +89,10 @@
             </div>
             <div class="video-list__item">
                 <div class="youtube-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FiI2Lxyfu-Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video-list__text">
-                    <h3>Декан Факультета лесного хозяйства, лесопромышленных технологий и садово-паркового строительства</h3>
+                    <h3>Декан Факультета лесного хозяйства, лесопромыш&shy;ленных технологий и садово-паркового строительства</h3>
                     <a href="/">Узнать больше о факультете ЛТ</a>
                 </div>
             </div>
@@ -106,8 +106,12 @@
         <h2>Абитуриент 2021</h2>
         <div class="subtitle mb-60"><span>Прямой эфир в 12:00</span></div>
 
-        <div class="youtube-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="live-video elapsed" id="js-live-entrant-video">
+            <div class="youtube-wrapper">
+                <iframe src="//vk.com/video_ext.php?oid=-32034&id=456239156&hash=88846a8bb87d9433&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="live-video__timer" id="js-live-entrant-timer">12:00</div>
+            <div class="live-video__screen"></div>
         </div>
 
         <div class="section-live__buttons">
@@ -224,8 +228,12 @@
         <h2>Деканы факультетов</h2>
         <div class="subtitle mb-60"><span>Прямой эфир в 13:30</span></div>
 
-        <div class="youtube-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="live-video elapsed" id="js-live-dean-video">
+            <div class="youtube-wrapper">
+                <iframe src="//vk.com/video_ext.php?oid=-32034&id=456239156&hash=88846a8bb87d9433&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="live-video__timer" id="js-live-dean-timer">13:30</div>
+            <div class="live-video__screen"></div>
         </div>
     </div>
 </section>
@@ -315,7 +323,11 @@
 <!--  Оверлей менюшки  -->
 <div class="menu-overlay"></div>
 
+<!--  Swiper  -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="src/js/common.min.js?v=26112020-3"></script>
+<!--  Must have  -->
+<script src="./src/js/common.min.js?v=26112020-3"></script>
+<!--  Timer  -->
+<script src="./src/js/timer.min.js?v=26112020-3" async></script>
 </body>
 </html>

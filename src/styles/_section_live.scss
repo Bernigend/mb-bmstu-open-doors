@@ -63,3 +63,40 @@
     }
   }
 }
+
+.live-video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__timer {
+    @extend h1;
+    color: #444444 !important;
+
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 99999;
+  }
+
+  &__screen {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
+
+  &.elapsed {
+    .live-video__timer {
+      display: none;
+    }
+
+    .live-video__screen {
+      display: none;
+    }
+  }
+}
