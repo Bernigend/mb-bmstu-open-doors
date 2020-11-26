@@ -1,0 +1,31 @@
+.section-fvo {
+  background-color: #f2f2f2;
+}
+
+.fvo__buttons {
+  margin-bottom: -20px;
+}
+
+.fvo__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > div {
+    width: 70%;
+
+    @media screen and (max-width: 1100px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: unset;
+    }
+  }
+
+  img {
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}

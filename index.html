@@ -104,15 +104,15 @@
 <section class="section-live" id="section-live-entrant">
     <div class="wrapper">
         <h2>Абитуриент 2021</h2>
-        <div class="subtitle"><span>Прямой эфир в 12:00</span></div>
+        <div class="subtitle mb-60"><span>Прямой эфир в 12:00</span></div>
 
         <div class="youtube-wrapper">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="section-live__buttons">
-            <a class="button" href="https://mf.bmstu.ru/info/priem/" target="_blank">Задать вопрос</a>
-            <a class="button" href="https://mf.bmstu.ru/info/priem/" target="_blank">Скачать презентацию</a>
+            <a class="button" href="#section-questions" id="js-ask-question">Задать вопрос</a>
+            <a class="button" href="./upload/presentation.pdf" target="_blank">Скачать презентацию</a>
         </div>
 
         <h3>Полезная информация</h3>
@@ -147,7 +147,7 @@
         </div>
 
         <div id="js-filter-choose">
-            <h3>Отметь предметы, которые планируешь сдавать на ЕГЭ</h3>
+            <h3 class="mt-60">Отметь предметы, которые планируешь сдавать на ЕГЭ</h3>
             <ul class="bachelor-subject-list" id="js-filter-buttons">
                 <li data-subject="1">Математика</li>
                 <li data-subject="5">Русский язык</li>
@@ -189,6 +189,32 @@
                 </ul>
             </div>
         </div>
+
+        <p id="js-filter-warn">
+            <b>Направлений с таким набором ЕГЭ у нас нет</b>
+        </p>
+
+        <div class="bachelor__buttons">
+            <a class="button--dark-blue" href="https://mf.bmstu.ru/info/priem/bachelor/" target="_blank">Подробнее о направлениях</a>
+        </div>
+    </div>
+</section>
+
+<!--  Военная кафедра  -->
+<section class="section-fvo">
+    <div class="wrapper">
+        <div class="fvo__text">
+            <div>
+                <h2>Военная кафедра</h2>
+                <p>
+                    Студенты, поступившие на очное отделение университета, годные по состоянию здоровья к военной службе и прошедшие профессиональный отбор, заключают с Министерством обороны договор об обучении по программе военной подготовки. Обучение на военной кафедре засчитывается как прохождение военной службы по призыву.
+                </p>
+                <div class="fvo__buttons">
+                    <a class="button--dark-blue" href="https://mf.bmstu.ru/info/fvo/" target="_blank">Узнать больше о военной кафедре</a>
+                </div>
+            </div>
+            <img src="./src/images/fvo.png" alt="Военная кафедра">
+        </div>
     </div>
 </section>
 
@@ -196,7 +222,7 @@
 <section class="section-live" id="section-live-dean">
     <div class="wrapper">
         <h2>Деканы факультетов</h2>
-        <div class="subtitle"><span>Прямой эфир в 13:30</span></div>
+        <div class="subtitle mb-60"><span>Прямой эфир в 13:30</span></div>
 
         <div class="youtube-wrapper">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RIIc93dwIKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -208,8 +234,8 @@
 <section class="section-questions" id="section-questions">
     <div class="wrapper">
         <div style="text-align: center;">
-            <h2>Остались вопросы?</h2>
-            <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfZhEsFnA5dn0Z_0QM-8.." width="640" height="538" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+            <h2 class="mb-60">Остались вопросы?</h2>
+            <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSce9W1BMMIGruiGPdlvNE47dmAKexHj0TuuBj9CJDNxdVLkdw/viewform?embedded=true" width="640" height="570" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
         </div>
     </div>
 </section>
@@ -290,6 +316,6 @@
 <div class="menu-overlay"></div>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="src/js/common.min.js?v=24112020"></script>
+<script src="src/js/common.min.js?v=26112020-3"></script>
 </body>
 </html>

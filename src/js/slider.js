@@ -21,7 +21,6 @@ var sliderContainer = document.getElementById('swiper-container');
 function sliderHeight() {
     var width = window.innerWidth;
     sliderContainer.style.height = ((width / 16) * 9) + 'px';
-    console.log('sgjis')
 }
 
 (function() {

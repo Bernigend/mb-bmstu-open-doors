@@ -1,12 +1,12 @@
 "use strict";
 
 var SCROLL_DURATION = 400;
-var SCROLL_OFFSET = 75;
+var SCROLL_OFFSET = 0;
 var EPSILON = 1e-10;
 
 var mainMenuNavLink = document.querySelectorAll(".main-menu_nav a[href*='#']");
 var firstPageArrow = document.querySelector(".section-header__arrow");
-// var logo = document.querySelector(".fixed-header_logo");
+var askQuestionBtn = document.getElementById('js-ask-question');
 
 function scrollToCoordinate(coordinate, duration) {
   var initialY = window.pageYOffset;
@@ -54,9 +54,6 @@ mainMenuNavLink.forEach(function (link) {
   link.addEventListener('click', scrollToAnchor(event));
 });
 
-firstPageArrow.addEventListener('click', scrollToAnchor(event));
+askQuestionBtn.addEventListener('click', scrollToAnchor(event));
 
-// logo.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   scrollToCoordinate(0, SCROLL_DURATION);
-// });
+firstPageArrow.addEventListener('click', scrollToAnchor(event));

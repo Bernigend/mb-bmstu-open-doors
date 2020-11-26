@@ -340,7 +340,6 @@ function search(searchObjects)
         if (intersection.length >= searchObjectsNum) {
             result.push(item);
         }
-        console.log('search', intersection, item);
     });
 
     return result;
@@ -409,6 +408,12 @@ function showSearchResult(blockForResults, searchResult)
     const filterItemsList = document.getElementById('js-filter-items-list');
 
     /**
+     * Абзац для уведомлений под результатами
+     * @type {HTMLElement}
+     */
+    const filterWarnBlock = document.getElementById('js-filter-warn');
+
+    /**
      * Кнопки с направлениями подготовки
      * @type {NodeListOf<ChildNode>}
      */
@@ -447,9 +452,17 @@ function showSearchResult(blockForResults, searchResult)
             if (searchResultCount > 0) {
                 filterResultBlock.classList.add('visible');
                 filterResultCount.innerHTML = ' (' + searchResultCount + ')';
+
+                filterWarnBlock.classList.remove('visible');
+                filterWarnBlock.innerHTML = '';
             } else {
                 filterResultBlock.classList.remove('visible');
                 filterResultCount.innerHTML = '';
+
+                if (searchData.length > 0) {
+                    filterWarnBlock.classList.add('visible');
+                    filterWarnBlock.innerHTML = '<p style="text-align: center">Направлений с таким набором ЕГЭ у нас нет</p>';
+                }
             }
 
             // меняем класс у кнопки
@@ -466,9 +479,6 @@ function showSearchResult(blockForResults, searchResult)
                     classes.push("selected");
                 element.className = classes.join(" ");
             }
-
-            console.log('main', searchData);
-            console.log('main', searchResult);
         });
     });
 
