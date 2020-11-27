@@ -17,6 +17,10 @@
   p {
     margin-top: 50px;
     margin-bottom: unset;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+    }
   }
 
   a {
