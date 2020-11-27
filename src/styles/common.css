@@ -378,7 +378,7 @@ body {
 }
 
 section, .main-footer {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
 @media screen and (max-width: 450px) {
@@ -565,7 +565,6 @@ button {
   padding: 15px 30px;
   border: 1px solid #ffffff;
   border-radius: 10px;
-  font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
   transition-property: box-shadow;
@@ -607,7 +606,7 @@ button {
 }
 @media screen and (max-width: 540px) {
   .h2-mobile {
-    display: block;
+    display: inline;
   }
 }
 
@@ -647,7 +646,7 @@ body {
 }
 
 section, .main-footer {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
 @media screen and (max-width: 450px) {
@@ -740,6 +739,11 @@ button {
   margin-top: 50px;
   margin-bottom: unset;
 }
+@media screen and (max-width: 768px) {
+  .main-footer p {
+    margin-top: 30px;
+  }
+}
 .main-footer a {
   color: white;
 }
@@ -776,7 +780,6 @@ button {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   line-height: 150%;
 }
 .main-footer .phone {
@@ -1170,10 +1173,8 @@ button {
 .section-video-messages .video-list__item h3 {
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 28px;
 }
 .section-video-messages .video-list__item a {
-  font-size: 18px;
   line-height: 1.5;
   text-decoration: underline;
 }
@@ -1465,7 +1466,7 @@ button {
 }
 
 .section-questions h2 {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .section-questions iframe {
   min-height: 630px;
@@ -1496,7 +1497,7 @@ body {
 }
 
 section, .main-footer {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
 @media screen and (max-width: 450px) {
@@ -1589,6 +1590,11 @@ button {
   margin-top: 50px;
   margin-bottom: unset;
 }
+@media screen and (max-width: 768px) {
+  .main-footer p {
+    margin-top: 30px;
+  }
+}
 .main-footer a {
   color: white;
 }
@@ -1625,7 +1631,6 @@ button {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   line-height: 150%;
 }
 .main-footer .phone {

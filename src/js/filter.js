@@ -461,7 +461,7 @@ function showSearchResult(blockForResults, searchResult)
 
                 if (searchData.length > 0) {
                     filterWarnBlock.classList.add('visible');
-                    filterWarnBlock.innerHTML = '<p style="text-align: center">Направлений с таким набором ЕГЭ у нас нет</p>';
+                    filterWarnBlock.innerHTML = '<p>Направлений с таким набором ЕГЭ у нас нет</p>';
                 }
             }
 
