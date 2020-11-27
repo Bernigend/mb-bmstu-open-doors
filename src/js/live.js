@@ -92,7 +92,7 @@ function fetchJson(response) {
      */
     var currentTime = new Date();
 
-    if (!(currentTime.getHours() >= entrantTime.getHours()))
+    if (currentTime <= entrantTime)
     {
         // устанавливаем таймер для приёмной кампании
         timerEntrant.countdown(entrantTime)
