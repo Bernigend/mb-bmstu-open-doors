@@ -55,7 +55,6 @@
   border: 1px solid #ffffff;
   border-radius: 10px;
 
-  font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
 
@@ -101,7 +100,7 @@
   display: none;
 
   @media screen and (max-width: 540px) {
-    display: block;
+    display: inline;
   }
 }
 

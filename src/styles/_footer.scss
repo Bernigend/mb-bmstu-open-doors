@@ -17,6 +17,10 @@
   p {
     margin-top: 50px;
     margin-bottom: unset;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+    }
   }
 
   a {
@@ -59,7 +63,6 @@
     margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
     line-height: 150%;
   }
 
