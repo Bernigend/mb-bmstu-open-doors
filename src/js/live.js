@@ -78,13 +78,13 @@ function fetchJson(response) {
      * Время срабатывания таймера для приёмной кампании
      * @type {Date}
      */
-    var entrantTime = new Date('2020-11-28 11:58:00');
+    var entrantTime = new Date('2020-11-28T11:58:00');
 
     /**
      * Время срабатывания таймера для деканов
      * @type {Date}
      */
-    var deanTime = new Date('2020-11-28 13:28:00');
+    var deanTime = new Date('2020-11-28T13:28:00');
 
     /**
      * Время при загрузке страницы
