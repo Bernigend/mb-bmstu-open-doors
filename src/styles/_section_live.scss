@@ -74,6 +74,11 @@
   flex-direction: column;
   margin-top: -40px;
 
+  p {
+    text-align: center;
+    color: #000000;
+  }
+
   &__timer {
     @extend h1;
     color: #444444 !important;

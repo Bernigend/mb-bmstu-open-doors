@@ -1265,6 +1265,10 @@ button {
   flex-direction: column;
   margin-top: -40px;
 }
+.live-video p {
+  text-align: center;
+  color: #000000;
+}
 .live-video__timer {
   color: #444444 !important;
   flex: 1 1 auto;

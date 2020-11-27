@@ -26,10 +26,25 @@
      */
     var timerDean = $("#js-live-dean-timer");
 
+    /**
+     * Экран приёмной кампании открыт
+     * @type {boolean}
+     */
+    var entrantElapsed = true;
+
+    /**
+     * Экран деканов открыт
+     * @type {boolean}
+     */
+    var deanElapsed = true;
+
     // устанавливаем таймер для приёмной кампании
     timerEntrant.countdown("2020/11/28 11:58:00")
         .on('update.countdown', function(event) {
-            videoEntrant.removeClass('elapsed');
+            if (entrantElapsed) {
+                videoEntrant.removeClass('elapsed');
+                entrantElapsed = false;
+            }
             timerEntrant.text(event.strftime('%H:%M:%S'));
         })
         .on('finish.countdown', function(event) {
@@ -39,7 +54,10 @@
     // устанавливаем таймер для деканов
     timerDean.countdown("2020/11/28 13:28:00")
         .on('update.countdown', function(event) {
-            videoDean.removeClass('elapsed');
+            if (deanElapsed) {
+                videoDean.removeClass('elapsed');
+                deanElapsed = false;
+            }
             timerDean.text(event.strftime('%H:%M:%S'));
         })
         .on('finish.countdown', function(event) {
